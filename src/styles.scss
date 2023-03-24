@@ -1,4 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+/*	320px — 480px: Mobile devices
+  	481px — 768px: iPads, Tablets
+  	769px — 1024px: Small screens, laptops
+  	1025px — 1200px: Desktops, large screens
+  	1201px and more —  Extra large screens, TV
+ */
+
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
+
+@import "./assets/styles/normalize";
+@import "./assets/styles/mixins.scss";
+@import "./assets/styles/login.scss";
+
+html {
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+}
+
+body {
+  width: inherit;
+  height: inherit;
+}

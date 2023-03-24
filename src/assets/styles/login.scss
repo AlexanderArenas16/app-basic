@@ -1,0 +1,67 @@
+.login-container {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/background-login.jpg');
+    @include background-image;
+    @include display-flex-center;
+    justify-content: center;
+    // .image-login {
+
+    // }
+
+    .inputs-login {
+        min-height: 60%;
+        background-color: white;
+        @include display-flex-center;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 1rem;
+        border-radius: 5px;
+        padding: 2rem;
+
+        .p-password-mask {
+            width: 100%;
+            max-width: 20rem;
+
+            div {
+                width: 100%;
+                max-width: 20rem;
+            }
+        }
+
+        h3 {
+            font-size: 2.5rem;
+            margin: 1rem 0;
+        }
+
+        input {
+            width: 100%;
+            max-width: 20rem;
+        }
+
+        button {
+            width: 100%;
+            max-width: 20rem;
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .login-container {
+        justify-content: flex-end;
+        .inputs-login {
+            min-width: 50%;
+            min-height: 100%;
+            justify-content: center;
+            gap: 4rem;             
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .login-container {
+        .inputs-login {
+            min-width: 40%;        
+        }
+    }
+}
