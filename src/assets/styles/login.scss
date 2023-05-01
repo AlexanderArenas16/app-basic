@@ -4,6 +4,7 @@
     background-image: url('../images/background-login.jpg');
     @include background-image;
     @include display-flex-center;
+    background-position: 50% 80%;
     justify-content: center;
     // .image-login {
 

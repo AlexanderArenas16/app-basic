@@ -23,3 +23,42 @@ body {
   width: inherit;
   height: inherit;
 }
+
+app-root{
+  display: block;
+  height: inherit;
+}
+
+.display-app {
+  & + * {
+    display: block;
+    height: inherit;
+	}
+}
+
+.container {
+  width: 100%;
+  height: inherit;
+  display: grid;
+  grid-template-columns: 16rem calc(100% - 16rem);
+  grid-template-rows: 4rem calc(100% - 8rem) 4rem;
+
+  .nav-bar {
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: aqua;
+  }
+
+  .side-bar {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: aquamarine;
+  }
+
+  .content {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .footer {
+    grid-area: 3 / 1 / 4 / 3;
+    background-color: grey;
+  }
+}
