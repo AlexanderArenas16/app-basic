@@ -55,10 +55,23 @@ app-root{
 
   .content {
     grid-area: 2 / 2 / 3 / 3;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
   }
 
   .footer {
     grid-area: 3 / 1 / 4 / 3;
     background-color: grey;
   }
+}
+
+.card {
+  border: 1px solid #e6e6e6;
+}
+
+.table-action {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
 }

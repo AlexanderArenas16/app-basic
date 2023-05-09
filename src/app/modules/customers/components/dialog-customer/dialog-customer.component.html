@@ -1,0 +1,9 @@
+<form [formGroup]="form">
+    <label for="">Nombre</label>
+    <input type="text" formControlName="name">
+    <label for="">Apellido</label>
+    <input type="text" formControlName="lastName">
+    <label for="">Cedula</label>
+    <input type="number" formControlName="personalId">
+</form>
+<button (click)="sendCustomer()">guardar</button>

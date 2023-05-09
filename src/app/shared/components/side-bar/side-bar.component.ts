@@ -16,6 +16,10 @@ export class SideBarComponent {
     {
       label: 'Configauración',
       routerLink: '../configuration'
+    },
+    {
+      label: 'Clientes',
+      routerLink: '../customers'
     }
   ]
 }
