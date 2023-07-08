@@ -10,6 +10,8 @@ import { CustomersService } from './service/customers.service';
 import { HttpClientModule } from '@angular/common/http';
 import { DialogCustomerComponent } from './components/dialog-customer/dialog-customer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
+import { ConfirmationService } from 'primeng/api';
 
 
 @NgModule({
@@ -27,7 +29,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     TableModule,
     ButtonModule,
     ToolbarModule,
+    ConfirmDialogModule
   ],
-  providers: [CustomersService]
+  providers: [CustomersService, ConfirmationService]
 })
 export class CustomersModule { }

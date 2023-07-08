@@ -1,9 +1,11 @@
-<form [formGroup]="form">
-    <label for="">Nombre</label>
-    <input type="text" formControlName="name">
-    <label for="">Apellido</label>
-    <input type="text" formControlName="lastName">
-    <label for="">Cedula</label>
-    <input type="number" formControlName="personalId">
-</form>
-<button (click)="sendCustomer()">guardar</button>
+<div class="content-inputs">
+    <form [formGroup]="form">
+        <label for="name">Nombre</label>
+        <input type="text" formControlName="name">
+        <label for="lastName">Apellido</label>
+        <input type="text" formControlName="lastName">
+        <label for="personalId">Cedula</label>
+        <input type="number" formControlName="personalId">
+    </form>
+    <button (click)="sendCustomer()">{{ dialogConfig.data.customer ? 'Editar' : 'Guardar' }}</button>
+</div>
